@@ -1,0 +1,12 @@
+def sum_of_digits(n):
+  tens_digit = n // 10
+  ones_digit = n % 10
+  return tens_digit + ones_digit
+
+if __name__ == "__main__":
+  t = int(input())
+
+  for _ in range(t):
+    n = int(input())
+    result = sum_of_digits(n)
+    print(result)
